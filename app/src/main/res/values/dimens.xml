@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="horizontal_view_padding">8dp</dimen>
+
+    <!-- POLL list item -->
+    <dimen name="poll_list_item_corner">5dp</dimen>
+    <dimen name="layout_start_margin">16dp</dimen>
+    <dimen name="layout_end_margin">16dp</dimen>
+
+    <!-- Fab icon -->
+    <dimen name="fab_icon_diameter">48dp</dimen>
+    <dimen name="fab_icon_margin_bottom">16dp</dimen>
+    <dimen name="fab_icon_margin_right">16dp</dimen>
+    <dimen name="fab_icon_margin_top">8dp</dimen>
+    <dimen name="fab_icon_margin_left">16dp</dimen>
+    <dimen name="fab_icon_elevation_low">1dp</dimen>
+    <dimen name="fab_icon_elevation_high">8dp</dimen>
+    <!-- List item -->
+    <dimen name="list_item_margin">16dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_item_icon_size">40dp</dimen>
+    <dimen name="list_item_sub_title">48dp</dimen>
+    <dimen name="list_item_height_single">56dp</dimen>
+    <dimen name="list_item_margin_single">8dp</dimen>
+    <dimen name="list_item_divider_height">8dp</dimen>
+    <dimen name="list_item_space_bet_content_areas">8dp</dimen>
+    <dimen name="list_item_padding">20dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="first_keyline">16dp</dimen>
+    <dimen name="second_keyline">72dp</dimen>
+    <dimen name="toolbar_h_padding">4dp</dimen>
+    <dimen name="headerbar_elevation">4dp</dimen>
+
+    <!-- Bottom Toolbar -->
+    <dimen name="bottom_second_keyline">16dp</dimen>
+
+    <!-- Fab sub menu -->
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">36dp</dimen>
+    <dimen name="fab_icon_size">10dp</dimen>
+    <dimen name="fab_plus_icon_size">18dp</dimen>
+    <dimen name="fab_plus_icon_stroke">5dp</dimen>
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+    <dimen name="fab_stroke_width">1dp</dimen>
+    <dimen name="fab_actions_spacing">8dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+    <!-- Profile Screen -->
+    <dimen name="profile_toolbar_icon_size">60dp</dimen>
+    <dimen name="profile_toolbar_metrics_size">144dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+</resources>

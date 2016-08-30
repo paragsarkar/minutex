@@ -1,0 +1,228 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="AppTheme.EpollBaseTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_menu_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/select_category</item>
+    </style>
+
+    <style name="ActionBarTabStyle" parent="Widget.AppCompat.ActionBar.TabView"></style>
+
+    <style name="AppTheme.EpollBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorForeground">@color/colorPrimaryDark</item>
+        <item name="android:colorForegroundInverse">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/white</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:backgroundDimAmount">1</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Action Mode styles -->
+        <item name="actionModeStyle">@style/Custom.Widget.ActionMode</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="actionModeCloseButtonStyle">@style/Custom.Widget.ActionButton.CloseMode</item>
+
+        <!-- Toolbar styles -->
+        <item name="toolbarStyle">@style/Custom.Widget.Toolbar</item>
+        <item name="toolbarNavigationButtonStyle">@style/Custom.Widget.Toolbar.Button.Navigation
+        </item>
+        <item name="actionOverflowButtonStyle">@style/Custom.Widget.ActionButton.Overflow</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+    </style>
+
+    <style name="EpollBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="android:activatedBackgroundIndicator">@drawable/listitem_background</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:listViewStyle">@style/ListViewStyle.Light</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ListViewStyle.Light.Card" parent="android:style/Widget.ListView">
+        <item name="android:divider">@color/lightgrey</item>
+        <item name="android:dividerHeight">10dp</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ListViewStyle.Light" parent="android:style/Widget.ListView">
+        <item name="android:divider">@color/lightestgrey</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:scrollbarStyle">outsideInset</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="App_ButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:buttonStyle">@style/App_ButtonStyle</item>
+    </style>
+
+    <style name="App_ButtonStyle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_pressed</item>
+    </style>
+
+    <style name="Skip_ButtonStyle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/skip_button_pressed</item>
+    </style>
+
+    <style name="App_TextTheme" parent="@android:style/Widget.TextView">
+        <item name="android:textViewStyle">@style/App_TextViewAppearanceStyle</item>
+    </style>
+
+    <style name="App_TextViewAppearanceStyle">
+        <item name="android:textViewStyle">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <style name="popup_item">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/button_border</item>
+    </style>
+
+    <style name="Custom.Widget.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="titleTextAppearance">@style/Custom.Widget.Toolbar.Title</item>
+        <item name="maxButtonHeight">48dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="collapseIcon">?attr/homeAsUpIndicator</item>
+        <item name="android:paddingRight">@dimen/toolbar_h_padding</item>
+    </style>
+
+    <style name="Custom.Widget.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/abc_text_size_title_material_toolbar</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Custom.Widget.Toolbar.Button.Navigation" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">48dp</item>
+    </style>
+
+    <style name="Custom.Widget.ActionButton.Overflow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="Custom.Widget.Actionbar" parent="Widget.AppCompat.ActionBar.Solid"></style>
+
+    <style name="Custom.Widget.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="android:paddingLeft">@dimen/first_keyline</item>
+        <item name="android:paddingRight">@dimen/toolbar_h_padding</item>
+    </style>
+
+    <style name="Custom.Widget.ActionButton.CloseMode" parent="Widget.AppCompat.ActionMode">
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="Toolbar.Popup.AppCompat" parent="ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="Custom.Widget.ProgressBar.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">12dp</item>
+        <!-- <item name="android:mirrorForRtl">true</item> -->
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">?colorPrimary</item>
+        <item name="elevation">@dimen/headerbar_elevation</item>
+    </style>
+
+    <style name="demo_graphic_text_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:text">@string/sample_text</item>
+    </style>
+
+    <style name="demo_graphic_edit_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="demo_graphic_middle_colon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">.1</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="Custom.Widget.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextAppearance">@style/Custom.TextAppearance.Design.Tab</item>
+    </style>
+
+    <style name="Custom.TextAppearance.Design.Tab" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ImageStyle">
+        <item name="android:onClick">clickOnChoiceItem</item>
+    </style>
+
+    <style name="CrossButtonStyle">
+        <item name="android:onClick">clickOnChoiceItem</item>
+        <item name="android:src">@drawable/ic_action_remove</item>
+    </style>
+
+    <style name="AppBaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Add_Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/button_shape</item>
+
+    </style>
+
+    <style name="AppTheme.EpollBaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.EpollBaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
